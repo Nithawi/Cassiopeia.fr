@@ -1,0 +1,314 @@
+
+/* { outline: 1px solid red; }*/ /* Pour le débogage : affiche les bordures des éléments */
+
+body {
+    font-family: "Alegreya", serif;
+    background-color: #fbfbfe;
+    color: #050316;
+    display: flex;
+    flex-direction: column;
+    padding-top: 110px;
+    min-height: 100vh; /* <-- INDISPENSABLE */
+    margin: 0;
+}
+
+
+header {
+    height: 110px;
+    background-color: #fbfbfe;
+    border-bottom: 10px solid #970747;
+    margin-bottom: 10px;
+    padding: 15px;
+    position: fixed; /* colle le header en haut */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1100;
+} 
+    
+    .logo_accueil {
+        float: left;
+
+    }
+
+    .accueil {
+        text-align: left;
+        position: absolute;
+        top : 0px;
+        left : 200px;
+        font-size: 50px;
+        }
+
+    .nom {
+        text-align: left;
+        position: absolute;
+        top : 70px;
+        left : 200px;
+        font-size: 30px;
+        }
+        
+
+.personnel {
+    margin-top: 60px;
+    font-size: 25px;
+    margin-left: 25px;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+    .personnel_row {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .formation_box,
+    .moi_box {
+        width: 500px;
+        height: auto;
+        padding: 25px;
+        border-radius: 10px;
+        background-color: #efc4d8;
+        font-size: 25px;
+        align-items: stretch;/*alligné a la même hauteur*/
+    }
+
+    .formation_box {
+        width: 650px;
+    }
+
+
+    .presentation_moi {
+        margin: 20px 0 0 0;
+        font-size: 20px;
+        margin-left: 25px;
+    }
+
+
+.sepa {
+    background-color: #970747;
+    padding: 5px;
+    margin-top: 20px;
+    }
+
+.box_langage {
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+    .box_langage .langage {
+        font-size: 40px;
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+
+        .langages_row {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+.c_box,
+.js_box,
+.css_box,
+.python_box, 
+.html_box {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #efc4d8;
+}
+
+    .lang_logo {
+        width: 100px;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    .lang_logo2 {
+        width: 150px;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+.sepa_projet_lang {
+    background-color: #970747;
+    padding: 5px;
+    margin-top: 50px;
+    }
+
+.box_projet {
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.box_projet .titre_projet {
+    font-size: 40px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.projets-container {
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    min-height: 360px;
+    display: flex;
+    gap: 20px;
+    align-items: stretch;/*alligné a la même hauteur*/
+
+    
+}
+
+
+
+.projet {
+    text-align: center;
+    font-size: 20px;
+    height: 350px;
+    width: 25vw;
+    position: relative;
+    background-color: #efc4d8;
+    border-radius: 20px;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    flex: 0 0 auto;
+}
+    ul.projet { 
+        margin: 0;
+        padding: 0;
+        margin-left: 25px;
+    }
+
+    .projet button{
+        position: absolute;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 60px;
+        z-index: 2;
+        cursor: pointer;
+        color: #6d0030;
+        transform: translateY(-50%);
+        top: 50%;
+
+    }
+
+    #prev {
+        left:5px;
+    }
+
+    #next {
+        right: 5px;
+    }
+
+    .projet li {
+        list-style: none;
+        height: 100%;
+
+    }
+
+    /* slides visibles uniquement quand elles sont actives */
+    .slide.active {
+        display: block;
+        opacity: 1;
+        position: relative;
+    }
+
+    .slide {
+        display: none; /* cache les slides pas active */
+        position: relative;
+        opacity: 0;
+    }
+
+
+        .slide .nom_projet {
+            font-size: 25px;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            max-height: 240px;
+            object-fit: contain;
+            border-radius: 20px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .info_slide {
+            font-size: 14px;
+            color: #555555;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            clear: both;
+        }
+
+    .description-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0;
+        flex: 0 0 auto;
+    }
+
+
+    .description {
+        display: none;
+        font-size: 20px;
+        position: relative;
+        opacity: 0;
+        background-color: #d1b1c0;
+        padding: 15px;
+        border-radius: 10px;
+        width: 500px;
+        min-height: 80px;
+        transition: opacity 0.5s ease-in-out;
+        margin: 0;
+    }
+
+        .description.active {
+            display: block;
+            opacity: 1;
+        }
+
+
+
+
+footer {
+    height: auto;
+    color: #fbfbfe;
+    background-color: #970747;
+    margin-top: auto; /* pousse le footer en bas si l'espace est disponible */
+    padding: 20px;
+    text-align: center;
+    width: auto;
+}
+    
+    .footerinfo {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .date {
+        margin: 0;
+    }

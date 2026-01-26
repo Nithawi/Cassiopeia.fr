@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Constellation de Cassiopée</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            text-align: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        svg {
+            display: block;
+            margin: 50px auto;
+        }
+        circle {
+            cursor: pointer;
+        }
+        line {
+            stroke: white;
+            stroke-width: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Constellation de Cassiopée</h1>
+    <svg width="800" height="600" viewBox="0 0 900 800">
+        <!-- Lignes de connexion -->
+        <line x1="118" y1="200" x2="0" y2="126" stroke="white" stroke-width="1" />
+        <line x1="0" y1="126" x2="179" y2="82" stroke="white" stroke-width="1" />
+        <line x1="179" y1="82" x2="293" y2="91" stroke="white" stroke-width="1" />
+        <line x1="293" y1="91" x2="400" y2="0" stroke="white" stroke-width="1" />
+        
+        <!-- Étoiles -->
+        <a href="schedar.html">
+            <circle cx="118" cy="200" r="17" fill="#FFA500" stroke="white" stroke-width="0.5" title="Schedar" />
+        </a>
+        <a href="caph.html">
+            <circle cx="0" cy="126" r="16.5" fill="white" stroke="white" stroke-width="0.5" title="Caph" />
+        </a>
+        <a href="gamma.html">
+            <circle cx="179" cy="82" r="18" fill="#87CEEB" stroke="white" stroke-width="0.5" title="Gamma Cassiopeiae" />
+        </a>
+        <a href="ruchbah.html">
+            <circle cx="293" cy="91" r="15" fill="white" stroke="white" stroke-width="0.5" title="Ruchbah" />
+        </a>
+        <a href="segin.html">
+            <circle cx="400" cy="0" r="14" fill="white" stroke="white" stroke-width="0.5" title="Segin" />
+        </a>
+    </svg>
+</body>
+</html>

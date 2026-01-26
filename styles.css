@@ -1,0 +1,162 @@
+
+/* styles.css */
+
+/*couleur principale: 
+                    Noir #020617
+
+                    Or #bd8d14
+
+                    Violet #4C1D95
+
+                    Bleu nuit #0F172A
+
+                    Blanc #FAFAFA*/
+
+/* polices utilisées:
+                    Iceberg (corps de texte)
+                    Megrim (logo / Cassiopeia) */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Iceberg', sans-serif; /* police moderne et lisible */
+            line-height: 1.6;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #0F172A, #020617);
+            /*background: linear-gradient(135deg, #020617, #0F172A);*/ /* dégradé */
+        }
+        header {
+            background: linear-gradient(135deg, #020617, #0F172A); /* dégradé */
+            color: #bd8d14;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            font-family: "Megrim", serif;
+            font-size: 28px;
+            font-weight: bold;
+            color: #bd8d14;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+            color: #bd8d14;
+            text-decoration: none;
+            transition: opacity 0.3s; 
+            padding: 10px; /* espacement */
+        }
+        nav a:hover { /* effet de survol*/
+            opacity: 0.7;
+            transform: scale(1.05);
+        }
+        
+        .debut {
+            color: #FAFAFA;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .debut h1 {
+            font-family: "Iceberg", serif;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .Cassiopeia {
+            font-family: "Megrim", serif;
+            font-size: 50px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .debut p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block; /* bouton en ligne */
+            background: white; /* fond blanc */
+            color: #bd8d14; /* texte violet */
+            padding: 12px 30px; /* espacement */
+            border-radius: 5px; /* bords arrondis */
+            text-decoration: none; /* pas de soulignement */
+            font-weight: bold; /* texte en gras */
+            transition: transform 0.3s; /* transition pour l'effet de survol */
+        }
+        .btn:hover { /* effet de survol */
+            transform: scale(1.05);
+        }
+
+        svg {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            display: block; 
+            margin: 0 auto;
+        }
+
+        a:hover .segin {
+            transform: scale(1.2);
+            transform-origin: 200px 300px;
+            transition: transform 0.3s;
+        }
+
+        a:hover .ruchbah {
+            transform: scale(1.2);
+            transform-origin: 300px 200px;
+            transition: transform 0.3s;
+        }
+
+        a:hover .navi {
+            transform: scale(1.2);
+            transform-origin: 400px 350px;
+            transition: transform 0.3s;
+        }
+
+        a:hover .Schedar {
+            transform: scale(1.2);
+            transform-origin: 500px 200px;
+            transition: transform 0.3s;
+        }
+
+        a:hover .Caph {
+            transform: scale(1.2);
+            transform-origin: 600px 300px;
+            transition: transform 0.3s;
+        }
+        
+footer {
+    height: auto;
+    color: #fbfbfe;
+    background: linear-gradient(135deg, #020617, #0F172A); /* dégradé */
+    margin-top: auto; /* pousse le footer en bas si l'espace est disponible */
+    padding: 20px;
+    text-align: center;
+    width: auto;
+}
+    
+    .footerinfo {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .date {
+        margin: 0;
+    }
