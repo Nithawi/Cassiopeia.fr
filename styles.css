@@ -69,13 +69,12 @@
         
         .debut {
             color: #FAFAFA;
-            padding: 100px 20px;
             text-align: center;
+            margin-top: 40px;
         }
         .debut h1 {
             font-family: "Iceberg", serif;
             font-size: 48px;
-            margin-bottom: 20px;
         }
 
         .Cassiopeia {
@@ -102,12 +101,23 @@
             transform: scale(1.05);
         }
 
+        .text-etoile {
+            color: #FAFAFA;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 0px;
+            margin-top: 40px;
+        }
+
         svg {
-            display: block;
-            margin: 0 auto;
-            border-radius: 10px;
-            display: block; 
-            margin: 0 auto;
+            display: block;/* centre le SVG */
+            margin: 0 auto;/* centre le SVG */
+            border-radius: 10px;/* bords arrondis */
+            display: block;/* centre le SVG */
+            margin: 0 auto;/* centre le SVG */;
+            margin-bottom: 20px;/* espace en bas */
+            margin-top: 0;/* espace en haut */
+            max-width: 100%;/* ajuste la taille du SVG */
         }
 
         a:hover .segin {
