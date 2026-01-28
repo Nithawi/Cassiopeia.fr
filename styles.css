@@ -101,11 +101,36 @@
             transform: scale(1.05);
         }
 
+ 
+        .description {
+            position: relative; /* pour l'overlay */
+            background-image: url("image/fond.jpg");   /* image de fond */
+            background-size: cover; /* couvre toute la section */
+            background-position: center; /* centre l'image */
+            background-attachment: fixed; /* effet de parallaxe */
+            padding: 40px; /* espacement interne */
+            margin-top: 40px; /* espace au dessus */
+            margin-bottom: 0px; /* espace en dessous */
+            color: #fff; /* texte blanc */
+            overflow: hidden;   /* pour l'overlay */
+            text-align: center; /* text centré */
+            text-align: start; /* texte aligné à gauche */
+            font-size: 20px; /* taille de police */
+        }
+        
+        .titre-constelation {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+
         .text-etoile {
-            color: #FAFAFA;
+            color: #a5a5a5;
             text-align: center;
             font-size: 18px;
-            margin-bottom: 0px;
+            margin-bottom: 40px;
             margin-top: 40px;
         }
 
@@ -115,7 +140,7 @@
             border-radius: 10px;/* bords arrondis */
             display: block;/* centre le SVG */
             margin: 0 auto;/* centre le SVG */;
-            margin-bottom: 20px;/* espace en bas */
+            margin-bottom: 40px;/* espace en bas */
             margin-top: 0;/* espace en haut */
             max-width: 100%;/* ajuste la taille du SVG */
         }
