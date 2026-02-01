@@ -147,31 +147,37 @@
 
         a:hover .segin {
             transform: scale(1.2);
-            transform-origin: 200px 300px;
+            transform-origin: 150px 180px;
             transition: transform 0.3s;
         }
 
         a:hover .ruchbah {
             transform: scale(1.2);
-            transform-origin: 300px 200px;
+            transform-origin: 280px 200px;
             transition: transform 0.3s;
         }
 
         a:hover .navi {
             transform: scale(1.2);
-            transform-origin: 400px 350px;
+            transform-origin: 380px 280px;
             transition: transform 0.3s;
         }
 
-        a:hover .Schedar {
+        a:hover .schedar {
             transform: scale(1.2);
-            transform-origin: 500px 200px;
+            transform-origin: 520px 150px;
             transition: transform 0.3s;
         }
 
-        a:hover .Caph {
+        a:hover .caph {
             transform: scale(1.2);
-            transform-origin: 600px 300px;
+            transform-origin: 680px 180px;
+            transition: transform 0.3s;
+        }
+
+        a:hover .pacman {
+            transform: scale(1.2);
+            transform-origin: -10px 20px;
             transition: transform 0.3s;
         }
         
