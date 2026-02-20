@@ -104,7 +104,7 @@
  
         .description {
             position: relative; /* pour l'overlay */
-            background-image: url("image/fond.jpg");   /* image de fond */
+            background-image: url("image/fond4.jpg");   /* image de fond */
             background-size: cover; /* couvre toute la section */
             background-position: center; /* centre l'image */
             background-attachment: fixed; /* effet de parallaxe */
@@ -134,15 +134,19 @@
             margin-top: 40px;
         }
 
+        .constelation {
+            display: flex;
+            align-items: flex-start;  /* alignement en haut */
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            max-width: 100%;
+        }
+
         svg {
-            display: block;/* centre le SVG */
-            margin: 0 auto;/* centre le SVG */
-            border-radius: 10px;/* bords arrondis */
-            display: block;/* centre le SVG */
-            margin: 0 auto;/* centre le SVG */;
-            margin-bottom: 40px;/* espace en bas */
-            margin-top: 0;/* espace en haut */
-            max-width: 100%;/* ajuste la taille du SVG */
+            width: 60%;
+            flex-shrink: 0; /* empêche le SVG de rétrécir */
+            cursor: pointer; /* pour indiquer que c'est cliquable */
         }
 
         a:hover .segin {
@@ -180,6 +184,28 @@
             transform-origin: -10px 20px;
             transition: transform 0.3s;
         }
+
+
+        .description_segin,
+        .description_ruchbah,
+        .description_navi,
+        .description_schedar,
+        .description_caph,
+        .description_pacman {
+            width: 460px;
+            color: #FAFAFA;
+            font-size: 20px;
+            padding: 20px;
+            display: none;
+            background-color: #ff0000;
+            border-radius: 10px;
+            margin-top: 20px;
+            background-image: url("image/fond4.jpg");   /* image de fond */
+            background-size: cover; /* couvre toute la section */
+            background-attachment: fixed; /* effet de parallaxe */
+        }
+
+ 
         
 footer {
     height: auto;

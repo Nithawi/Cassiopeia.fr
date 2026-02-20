@@ -26,7 +26,6 @@
 
     <section class="debut">
         <h1>Bienvenue sur <div class="Cassiopeia">Cassiopeia</div></h1>
-        <!--<a href="https://navi.cassiopeia-space.fr/" class="btn">Accéder à Navi - Cloud</a>-->
     </section>
 
     <section class="description">
@@ -35,175 +34,216 @@
         </section></p>
     </section>
 
+
+    <h2 class="titre-constelation">Constellation de <div class="Cassiopeia">Cassiopeia</div></h2>
+    <p class="text-etoile">Explorez la constellation de Cassiopeia en cliquant sur les étoiles :</p>
+
     <section class ="constelation">
-        <h2 class="titre-constelation">Constellation de <div class="Cassiopeia">Cassiopeia</div></h2>
-        <p class="text-etoile">Explorez la constellation de Cassiopeia en cliquant sur les étoiles :</p>
-<svg width="900" height="790" viewBox="0 0 900 300">
-        
-        <!-- Groupe avec rotation de 25° autour du centre -->
-        <g transform="translate(450, 275) translate(-460, -480)">
-        <g transform="translate(450, 275) rotate(25) translate(-450, -275) scale(1.5, 1.5) translate(-110, -40)">
-        
-            <!-- Lignes de connexion-->
-            <!-- Segin à Ruchbah -->
-            <line x1="150" y1="180" x2="280" y2="200" stroke="white" stroke-width="2" />
-            <!-- Ruchbah à Navi -->
-            <line x1="270" y1="200" x2="370" y2="280" stroke="white" stroke-width="2" />
-            <!-- Navi à Schedar -->
-            <line x1="370" y1="280" x2="510" y2="150" stroke="white" stroke-width="2" />
-            <!-- Schedar à Caph -->
-            <line x1="520" y1="150" x2="680" y2="180" stroke="white" stroke-width="2" />
-
-            <!-- Étoiles-->
-            
-            <!-- Segin -->
-            <a href="segin.html">
-                <polygon class="segin" 
-                    points="150,180 144,183 145,189 140,185 135,189 136,183 130,180 136,177 135,171 140,175 145,171 144,177" 
-                    stroke="#c2e0f9" 
-                    stroke-width="6" 
-                    fill="#c2e0f9" />
-            </a>
-
-            <!-- Ruchbah -->
-            <a href="ruchbah.html">
-                <polygon class="ruchbah" 
-                    points="280,200 274,203 275,209 270,205 265,209 266,203 260,200 266,197 265,191 270,195 275,191 274,197" 
-                    stroke="#fdfbd4" 
-                    stroke-width="6" 
-                    fill="#fdfbd4" />
-            </a>
-
-            <!-- Navi  -->
-            <a href="https://navi.cassiopeia-space.fr/">
-                <polygon class="navi" 
-                    points="380,280 373,284 374,291 368,286 362,291 363,284 356,280 363,276 362,269 368,274 374,269 373,276" 
-                    stroke="#77b5fe" 
-                    stroke-width="7" 
-                    fill="#77b5fe" />
-            </a>
-
-            <!-- Schedar  -->
-            <a href="shedar.html">
-                <polygon class="schedar" 
-                    points="520,150 513,154 514,161 508,156 502,161 503,154 496,150 503,146 502,139 508,144 514,139 513,146" 
-                    stroke="#7f1734" 
-                    stroke-width="7" 
-                    fill="#7f1734"/>
-            </a>
-
-            <!-- Caph ) -->
-            <a href="caph.html">
-                <polygon class="caph" 
-                    points="680,180 674,183 675,189 670,185 665,189 666,183 660,180 666,177 665,171 670,175 675,171 674,177" 
-                    stroke="#ffff62" 
-                    stroke-width="6" 
-                    fill="#ffff62" />
-            </a>
-            </g>
-
-            <!-- Noms des étoiles -->
-            <text x="110" y="90" text-anchor="middle" fill="white">Segin</text>
-            <text x="280" y="115" text-anchor="middle" fill="white">Ruchbah</text>
-            <text x="355" y="375" text-anchor="middle" fill="white">Navi</text>
-            <text x="630" y="295" text-anchor="middle" fill="white">Schedar</text>
-            <text x="830" y="420" text-anchor="middle" fill="white">Caph</text>
-        
-        
-
-                <!-- Nébuleuse Pacman (NGC 281) - Plus réaliste -->
-        <g transform="translate(545, 510)">
-            <defs> <!-- Définitions des gradients et filtres -->
-                <!-- Gradients pour les nuages rouges -->
-                <radialGradient id="redNebula1" cx="50%" cy="50%" r="60%"> <!-- Nuage rouge externe -->
-                    <stop offset="0%" style="stop-color:#ff3838;stop-opacity:0.6" /> <!-- Couleur rouge vif au centre -->
-                    <stop offset="40%" style="stop-color:#d92027;stop-opacity:0.4" /><!-- Rouge plus sombre vers l'extérieur -->
-                    <stop offset="70%" style="stop-color:#8b1a1f;stop-opacity:0.2" /><!-- Rouge foncé vers les bords -->
-                    <stop offset="100%" style="stop-color:#0a0e1a;stop-opacity:0" /><!-- Transparent à l'extrémité -->
-                </radialGradient>
+        <svg width="900" height="790" viewBox="0 0 900 300">
                 
-                <!-- Zone bleue centrale -->
-                <radialGradient id="blueCore" cx="50%" cy="50%" r="40%"> <!-- Centre bleu -->
-                    <stop offset="0%" style="stop-color:#a8d8ea;stop-opacity:0.8" /><!-- Bleu clair au centre -->
-                    <stop offset="30%" style="stop-color:#7fb3d5;stop-opacity:0.6" /><!-- Bleu moyen vers l'extérieur -->
-                    <stop offset="60%" style="stop-color:#4a7c9c;stop-opacity:0.3" /><!-- Bleu foncé vers les bords -->
-                    <stop offset="100%" style="stop-color:#1a3a52;stop-opacity:0" /><!-- Transparent à l'extrémité -->
-                </radialGradient>
+                <!-- Groupe avec rotation de 25° autour du centre -->
+                <g transform="translate(450, 275) translate(-460, -480)">
+                <g transform="translate(450, 275) rotate(25) translate(-450, -275) scale(1.5, 1.5) translate(-110, -40)">
                 
-                <!-- Filtre de lueur -->
-                <filter id="nebGlow"> <!-- Lueur douce autour des éléments -->
-                    <feGaussianBlur stdDeviation="4" result="coloredBlur"/> <!-- Flou gaussien -->
-                    <feMerge> <!-- Fusion des couches -->
-                        <feMergeNode in="coloredBlur"/> <!-- Couche floue -->
-                        <feMergeNode in="SourceGraphic"/> <!-- Couche originale -->
-                    </feMerge> <!-- Fin de la fusion -->
-                </filter> <!-- Fin du filtre -->
+                    <!-- Lignes de connexion-->
+                    <!-- Segin à Ruchbah -->
+                    <line x1="150" y1="180" x2="280" y2="200" stroke="white" stroke-width="2" />
+                    <!-- Ruchbah à Navi -->
+                    <line x1="270" y1="200" x2="370" y2="280" stroke="white" stroke-width="2" />
+                    <!-- Navi à Schedar -->
+                    <line x1="370" y1="280" x2="510" y2="150" stroke="white" stroke-width="2" />
+                    <!-- Schedar à Caph -->
+                    <line x1="520" y1="150" x2="680" y2="180" stroke="white" stroke-width="2" />
+
+                    <!-- Étoiles-->
+                    
+                    <!-- Segin -->
+                    <a>
+                        <polygon class="segin" 
+                            points="150,180 144,183 145,189 140,185 135,189 136,183 130,180 136,177 135,171 140,175 145,171 144,177" 
+                            stroke=white 
+                            stroke-width="6" 
+                            fill=white />
+                    </a>
+
+                    <!-- Ruchbah -->
+                    <a>
+                        <polygon class="ruchbah" 
+                            points="280,200 274,203 275,209 270,205 265,209 266,203 260,200 266,197 265,191 270,195 275,191 274,197" 
+                            stroke=white
+                            stroke-width="6" 
+                            fill=white />
+                    </a>
+
+                    <!-- Navi  -->
+                    <a>
+                        <polygon class="navi" 
+                            points="380,280 373,284 374,291 368,286 362,291 363,284 356,280 363,276 362,269 368,274 374,269 373,276" 
+                            stroke=white
+                            stroke-width="7" 
+                            fill=white />
+                    </a>
+
+                    <!-- Schedar  -->
+                    <a>
+                        <polygon class="schedar" 
+                            points="520,150 513,154 514,161 508,156 502,161 503,154 496,150 503,146 502,139 508,144 514,139 513,146" 
+                            stroke=white 
+                            stroke-width="7" 
+                            fill=white />
+                    </a>
+
+                    <!-- Caph ) -->
+                    <a>
+                        <polygon class="caph" 
+                            points="680,180 674,183 675,189 670,185 665,189 666,183 660,180 666,177 665,171 670,175 675,171 674,177" 
+                            stroke=white 
+                            stroke-width="6" 
+                            fill=white />
+                    </a>
+                    </g>
+
+                    <!-- Noms des étoiles -->
+                    <text x="110" y="90" text-anchor="middle" fill="white">Segin</text>
+                    <text x="280" y="115" text-anchor="middle" fill="white">Ruchbah</text>
+                    <text x="355" y="375" text-anchor="middle" fill="white">Navi</text>
+                    <text x="630" y="295" text-anchor="middle" fill="white">Schedar</text>
+                    <text x="830" y="420" text-anchor="middle" fill="white">Caph</text>
                 
-                <filter id="softGlow"> <!-- Lueur plus douce pour les nuages externes -->
-                    <feGaussianBlur stdDeviation="6" result="coloredBlur"/> <!-- Flou gaussien plus important -->
-                    <feMerge> <!-- Fusion des couches -->
-                        <feMergeNode in="coloredBlur"/> <!-- Couche floue -->
-                        <feMergeNode in="SourceGraphic"/> <!-- Couche originale -->
-                    </feMerge> <!-- Fin de la fusion -->
-                </filter>
-            </defs> <!-- Fin des définitions -->
-            
-            <!-- Nuages rouges externes  -->
-        <a href="https://fr.wikipedia.org/wiki/N%C3%A9buleuse_Pacman">
-        <g class="pacman" >
-            <ellipse cx="0" cy="20" rx="105" ry="70" fill="url(#redNebula1)" opacity="0.7" filter="url(#softGlow)" transform="rotate(80)"/>
-            <ellipse cx="50" cy="-30" rx="60" ry="55" fill="url(#redNebula1)" opacity="0.6" filter="url(#softGlow)" transform="rotate(20)"/>
-            
-            <!-- Zone rouge centrale -->
-            <circle cx="0" cy="0" r="80" fill="url(#redNebula1)" opacity="0.5" filter="url(#softGlow)"/>
-            
-            <!-- Zone bleue centrale  -->
-            <ellipse cx="5" cy="0" rx="100" ry="80" fill="url(#blueCore)" opacity="0.7" filter="url(#nebGlow)" transform="rotate(-10)"/>
-            <ellipse cx="-5" cy="0" rx="40" ry="55" fill="url(#blueCore)" opacity="0.6" filter="url(#nebGlow)"/>
-            
-            <!-- etoile de la nebuleuse  -->
-            
-            <!-- Étoiles brillantes dans la nébuleuse -->
-            <circle cx="0" cy="0" r="2.5" fill="white" opacity="1" filter="url(#nebGlow)"/>
-            <circle cx="10" cy="-8" r="2" fill="#e0f4ff" opacity="0.95" filter="url(#nebGlow)"/>
-            <circle cx="-12" cy="5" r="1.8" fill="#e0f4ff" opacity="0.9" filter="url(#nebGlow)"/>
-            <circle cx="15" cy="10" r="1.5" fill="white" opacity="0.85"/>
-            <circle cx="-20" cy="-10" r="1.5" fill="white" opacity="0.8"/>
-            <circle cx="25" cy="-5" r="1.2" fill="white" opacity="0.75"/>
-            <circle cx="-8" cy="-15" r="1.2" fill="white" opacity="0.7"/>
-            <circle cx="5" cy="15" r="1" fill="white" opacity="0.7"/>
-            <circle cx="-15" cy="12" r="1" fill="white" opacity="0.65"/>
-            
-            <!-- Petites étoiles supplémentaires -->
-            <circle cx="30" cy="20" r="0.8" fill="white" opacity="0.6"/>
-            <circle cx="-25" cy="18" r="0.8" fill="white" opacity="0.6"/>
-            <circle cx="18" cy="-20" r="0.8" fill="white" opacity="0.6"/>
-            <circle cx="-18" cy="-18" r="0.8" fill="white" opacity="0.6"/>
-            <circle cx="35" cy="-12" r="0.7" fill="white" opacity="0.5"/>
-            <circle cx="-30" cy="-5" r="0.7" fill="white" opacity="0.5"/>
-        </a>
-        </g>
-            
-            <!-- Label -->
-            <text x="540" y="640" text-anchor="middle" fill="white" class="nebula-label">Nébuleuse Pacman</text>
-        </g>
-        
-        <!-- Champ d'étoiles d'arrière-plan -->
-        <circle cx="80" cy="120" r="1.2" fill="white" opacity="0.6"/>
-        <circle cx="820" cy="180" r="1" fill="white" opacity="0.5"/>
-        <circle cx="150" cy="450" r="0.9" fill="white" opacity="0.5"/>
-        <circle cx="750" cy="520" r="1.1" fill="white" opacity="0.6"/>
-        <circle cx="200" cy="750" r="0.8" fill="white" opacity="0.4"/>
-        <circle cx="700" cy="780" r="1" fill="white" opacity="0.5"/>
-        <circle cx="350" cy="100" r="0.7" fill="white" opacity="0.4"/>
-        <circle cx="550" cy="150" r="0.9" fill="white" opacity="0.5"/>
-        <circle cx="100" cy="650" r="0.8" fill="white" opacity="0.4"/>
-        <circle cx="800" cy="700" r="0.9" fill="white" opacity="0.5"/>
-        <circle cx="450" cy="50" r="0.8" fill="white" opacity="0.4"/>
-        <circle cx="250" cy="300" r="0.7" fill="white" opacity="0.4"/>
-        <circle cx="650" cy="350" r="0.8" fill="white" opacity="0.5"/>
-        </g>
-    </svg>
+                
+
+                        <!-- Nébuleuse Pacman (NGC 281) - Plus réaliste -->
+                <g transform="translate(545, 510)">
+                    <defs> <!-- Définitions des gradients et filtres -->
+                        <!-- Gradients pour les nuages rouges -->
+                        <radialGradient id="redNebula1" cx="50%" cy="50%" r="60%"> <!-- Nuage rouge externe -->
+                            <stop offset="0%" style="stop-color:#ff3838;stop-opacity:0.6" /> <!-- Couleur rouge vif au centre -->
+                            <stop offset="40%" style="stop-color:#d92027;stop-opacity:0.4" /><!-- Rouge plus sombre vers l'extérieur -->
+                            <stop offset="70%" style="stop-color:#8b1a1f;stop-opacity:0.2" /><!-- Rouge foncé vers les bords -->
+                            <stop offset="100%" style="stop-color:#0a0e1a;stop-opacity:0" /><!-- Transparent à l'extrémité -->
+                        </radialGradient>
+                        
+                        <!-- Zone bleue centrale -->
+                        <radialGradient id="blueCore" cx="50%" cy="50%" r="40%"> <!-- Centre bleu -->
+                            <stop offset="0%" style="stop-color:#a8d8ea;stop-opacity:0.8" /><!-- Bleu clair au centre -->
+                            <stop offset="30%" style="stop-color:#7fb3d5;stop-opacity:0.6" /><!-- Bleu moyen vers l'extérieur -->
+                            <stop offset="60%" style="stop-color:#4a7c9c;stop-opacity:0.3" /><!-- Bleu foncé vers les bords -->
+                            <stop offset="100%" style="stop-color:#1a3a52;stop-opacity:0" /><!-- Transparent à l'extrémité -->
+                        </radialGradient>
+                        
+                        <!-- Filtre de lueur -->
+                        <filter id="nebGlow"> <!-- Lueur douce autour des éléments -->
+                            <feGaussianBlur stdDeviation="4" result="coloredBlur"/> <!-- Flou gaussien -->
+                            <feMerge> <!-- Fusion des couches -->
+                                <feMergeNode in="coloredBlur"/> <!-- Couche floue -->
+                                <feMergeNode in="SourceGraphic"/> <!-- Couche originale -->
+                            </feMerge> <!-- Fin de la fusion -->
+                        </filter> <!-- Fin du filtre -->
+                        
+                        <filter id="softGlow"> <!-- Lueur plus douce pour les nuages externes -->
+                            <feGaussianBlur stdDeviation="6" result="coloredBlur"/> <!-- Flou gaussien plus important -->
+                            <feMerge> <!-- Fusion des couches -->
+                                <feMergeNode in="coloredBlur"/> <!-- Couche floue -->
+                                <feMergeNode in="SourceGraphic"/> <!-- Couche originale -->
+                            </feMerge> <!-- Fin de la fusion -->
+                        </filter>
+                    </defs> <!-- Fin des définitions -->
+                    
+                    <!-- Nuages rouges externes  -->
+                <a>
+                <g class="pacman" >
+                    <ellipse cx="0" cy="20" rx="105" ry="70" fill="url(#redNebula1)" opacity="0.7" filter="url(#softGlow)" transform="rotate(80)"/>
+                    <ellipse cx="50" cy="-30" rx="60" ry="55" fill="url(#redNebula1)" opacity="0.6" filter="url(#softGlow)" transform="rotate(20)"/>
+                    
+                    <!-- Zone rouge centrale -->
+                    <circle cx="0" cy="0" r="80" fill="url(#redNebula1)" opacity="0.5" filter="url(#softGlow)"/>
+                    
+                    <!-- Zone bleue centrale  -->
+                    <ellipse cx="5" cy="0" rx="100" ry="80" fill="url(#blueCore)" opacity="0.7" filter="url(#nebGlow)" transform="rotate(-10)"/>
+                    <ellipse cx="-5" cy="0" rx="40" ry="55" fill="url(#blueCore)" opacity="0.6" filter="url(#nebGlow)"/>
+                    
+                    <!-- etoile de la nebuleuse  -->
+                    
+                    <!-- Étoiles brillantes dans la nébuleuse -->
+                    <circle cx="0" cy="0" r="2.5" fill="white" opacity="1" filter="url(#nebGlow)"/>
+                    <circle cx="10" cy="-8" r="2" fill="#e0f4ff" opacity="0.95" filter="url(#nebGlow)"/>
+                    <circle cx="-12" cy="5" r="1.8" fill="#e0f4ff" opacity="0.9" filter="url(#nebGlow)"/>
+                    <circle cx="15" cy="10" r="1.5" fill="white" opacity="0.85"/>
+                    <circle cx="-20" cy="-10" r="1.5" fill="white" opacity="0.8"/>
+                    <circle cx="25" cy="-5" r="1.2" fill="white" opacity="0.75"/>
+                    <circle cx="-8" cy="-15" r="1.2" fill="white" opacity="0.7"/>
+                    <circle cx="5" cy="15" r="1" fill="white" opacity="0.7"/>
+                    <circle cx="-15" cy="12" r="1" fill="white" opacity="0.65"/>
+                    
+                    <!-- Petites étoiles supplémentaires -->
+                    <circle cx="30" cy="20" r="0.8" fill="white" opacity="0.6"/>
+                    <circle cx="-25" cy="18" r="0.8" fill="white" opacity="0.6"/>
+                    <circle cx="18" cy="-20" r="0.8" fill="white" opacity="0.6"/>
+                    <circle cx="-18" cy="-18" r="0.8" fill="white" opacity="0.6"/>
+                    <circle cx="35" cy="-12" r="0.7" fill="white" opacity="0.5"/>
+                    <circle cx="-30" cy="-5" r="0.7" fill="white" opacity="0.5"/>
+                </a>
+                </g>
+                    
+                    <!-- Label -->
+                    <text x="540" y="640" text-anchor="middle" fill="white" class="nebula-label">Nébuleuse Pacman</text>
+                </g>
+                
+            </svg>
+
+
+    <div class="description_segin">
+        <p>L'etoile segin est une être et je suis encore et toujours circonspect dans le doute et ce mot n'apporte rien aucune réponse et donc toujours je me jette à la figure ces accusations comme des bouteilles non pas à la mer mais bien dans la gueule oui je me donne des coups de bouteille tessons épars sur le parquet et mes joues ensanglantées enfin que ce soit ou non métaphore que le mot d'albâtre me figure ou non je prends ces coups ces reproches en plein visage et je m'accuse d'être velléitaire aussi bien sûr pour trop entreprendre je lance cent feux il est normal qu'un certain nombre des foyers meure et même ne démarre qu'à peine avant de s'achever dans un bruit de feuilles mouillées de bois mort de bois trop vert encore pour prendre tout cela encore métaphore et toujours métaphore peut-être est-ce le mot albâtre qui appelle autant de métaphores ou bien les conditions d'écriture du très long texte que par facétie ou encore autodérision je pourrais être tenté de rebaptiser très long texte interrompu et l'adjectif interrompu ici </p>
+    </div>
+
+    <div class="description_ruchbah">
+        <p>L'etoile ruchbah</p>
+    </div>
+
+    <div class="description_navi">
+        <p>L’étoile Navi est représentée sur mon serveur
+            et incarne le point de guidage de mon système.
+            Elle permet l’accès principal à l’infrastructure.
+        Mon NAS est connecté à cette étoile centrale.
+        Il regroupe l’ensemble de mes fichiers.
+        Les données y sont stockées de manière organisée.
+        Un cloud est relié directement à ce NAS.
+        Il agit comme une extension distante du stockage.
+        Pour accéder au cloud, utilise le lien suivant :<br><br>
+        👉  <a href = "https://navi.cassiopeia-space.fr/" style="color: aliceblue;">https://navi.cassiopeia-space.fr/</a><br><br>
+
+        Grâce au cloud, les fichiers sont synchronisés.
+        Je peux y accéder depuis n’importe où.
+        Ainsi, mes fichiers restent disponibles à tout moment.</p> 
+    </div>
+
+    <div class="description_schedar">
+        <p>L’étoile Schedar est représentée sur mon serveur
+            et symbolise le centre de mon infrastructure numérique.
+            Mon NAS y est directement intégré
+            et centralise l’ensemble de mes fichiers.
+            Il constitue le cœur de mon système de stockage.
+            Ce NAS est relié à mon cloud personnel
+            afin d’assurer une synchronisation continue des données.
+            Pour accéder à Schedar, clique ici :<br><br>
+            👉 <a href = "https://schedar.cassiopeia-space.fr/" style="color: aliceblue;">https://schedar.cassiopeia-space.fr/</a><br><br>
+
+
+            Grâce à cette connexion,
+            mes fichiers sont accessibles à distance.
+            Je peux y accéder depuis n’importe quel endroit.
+            Une simple connexion Internet suffit.
+            Le partage de fichiers est ainsi facilité.
+            Le serveur gère la liaison entre le NAS et le cloud.</p>
+    </div>
+
+    <div class="description_caph">
+        <p>L'etoile caph</p>
+    </div>
+
+    <div class="description_pacman">
+        <p>la nebuleuse pacman</p>
+    </div>
 </section>
 
 <footer> 
@@ -216,5 +256,7 @@
     </div>
 </footer>
 
+
+<script src="index.js"></script>
 </body>
 </html>

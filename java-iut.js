@@ -20,8 +20,8 @@ buttonts.forEach((button) => {
         slideActuel.classList.remove("active");
         descriptions [newIndex].classList.add("active");
         descriptionActuel.classList.remove("active");
-    });
-});
+    })
+})
     
     
 
