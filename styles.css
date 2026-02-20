@@ -104,7 +104,7 @@
  
         .description {
             position: relative; /* pour l'overlay */
-            background-image: url("image/fond4.jpg");   /* image de fond */
+            background-image: url("image/fond3.avif");   /* image de fond */
             background-size: cover; /* couvre toute la section */
             background-position: center; /* centre l'image */
             background-attachment: fixed; /* effet de parallaxe */
@@ -140,13 +140,16 @@
             justify-content: center;
             gap: 40px;
             margin-bottom: 40px;
+            margin-top: 40px;
             max-width: 100%;
+            
         }
 
         svg {
             width: 60%;
             flex-shrink: 0; /* empêche le SVG de rétrécir */
             cursor: pointer; /* pour indiquer que c'est cliquable */
+            transition: transform 0.7s ease;
         }
 
         a:hover .segin {
@@ -200,9 +203,16 @@
             background-color: #ff0000;
             border-radius: 10px;
             margin-top: 20px;
-            background-image: url("image/fond4.jpg");   /* image de fond */
+            background-image: url("image/fond3.avif");   /* image de fond */
             background-size: cover; /* couvre toute la section */
             background-attachment: fixed; /* effet de parallaxe */
+            transform: translateX(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+
+        }
+
+        .description_nom {
+            font-size: 35px;
         }
 
  

@@ -10,13 +10,18 @@ const etoiles = [
 ]
 
 const conteneur = document.querySelector(".constelation");
+const svgElement = conteneur.querySelector("svg");
 
 function cacherDescriptions() {
     etoiles.forEach(({ description }) => {
         document.querySelectorAll(description).forEach((desc) => {
+            desc.style.opacity = "0";
+            desc.style.transform = "translateX(30px)";
             desc.style.display = "none";
         })
     })
+    svgElement.style.transform = "translateX(0px)"
+
 }
 
 etoiles.forEach(({ svg, description }) => {
@@ -32,6 +37,15 @@ etoiles.forEach(({ svg, description }) => {
 
             if (!estVisible) {
                 descriptionActuelle.style.display = "block";
+
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        descriptionActuelle.style.opacity = "1";
+                        descriptionActuelle.style.transform = "translateX(0px)";
+                    });
+                });
+                svgElement.style.transform = "translateX(-75px)";
+            
             }
         })
     })
