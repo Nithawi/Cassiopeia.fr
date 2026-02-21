@@ -189,7 +189,7 @@
         }
 
 
-        .description_segin,
+        .constelation .description_segin,
         .description_ruchbah,
         .description_navi,
         .description_schedar,
@@ -213,6 +213,8 @@
         .description_nom {
             font-size: 35px;
         }
+
+
 
  
         
