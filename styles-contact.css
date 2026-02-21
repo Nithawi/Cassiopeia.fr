@@ -28,7 +28,7 @@
             display: flex;
             flex-direction: column;
             background: linear-gradient(135deg, #0F172A, #020617);
-            /*background: linear-gradient(135deg, #020617, #0F172A);*/ /* dégradé */
+            /*background: linear-gradient(135deg, #020617, #0F172A);*/ /* dégradé */;
         }
         header {
             background: linear-gradient(135deg, #020617, #0F172A); /* dégradé */
@@ -66,7 +66,134 @@
             transform: scale(1.05);
         }
 
+        form {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-image: url("image/fond3.avif");
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            font-weight:bold;
+            color: aliceblue;
+        }
 
+        form h2{
+            text-align: center;
+            color: #bd8d14;
+            font-size: 30px;
+        }
+
+
+        form .separation {
+            height: 5px;
+            background-color: #ffffff;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        form .required{
+            font-size: 15px;
+            color: #ff0000;
+        }
+
+        form .corps {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        form .corps .gauche{
+                margin-right: 40px;
+            }
+
+        form .corps .groupe {
+            position: relative;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form .corps .gauche .groupe input {
+            padding: 10px 5px 10px 30px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 5px;
+            outline: none;
+        }
+
+        form .corps .gauche .groupe i {
+            position: absolute;
+            top: 40px;
+            left: 5px;
+            color: #bd8d14;
+        }
+
+        form .corps .droite .groupe {
+            height: 100%;
+        }
+
+        form .corps .droite .groupe textarea {
+            margin-top: 5px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            resize: none;
+            height: 85%;
+        }
+
+        form .mention {
+            margin-top: 15px;
+            position: relative;
+            transform: translateY(-15px);
+            color: aliceblue;
+        }
+
+        form .envoi {
+            position: relative;
+            left: 30%;
+        }
+
+        form .envoi button {
+            margin-top: 10px;
+            background-color: #bd8d14;
+            border-radius: 5px;
+            padding:10px 20px ;
+            font-size: 15px;
+            font-family: 'Iceberg', sans-serif; ;
+            color: aliceblue;
+            outline: none;
+            cursor: pointer;
+        }
+
+        form .envoi i{
+            position: relative;
+            padding: right 2px 0px ;
+            right: 5px;
+            color: aliceblue;
+        }
+        
+        form .envoi button:hover { /* effet de survol*/
+            transform: scale(1.1);
+            transition: transform 0.5s;
+        }
+
+        @media screen and (max-with:920){
+            form .corps .gauche{
+                margin-right: 0px;
+            }
+
+            form .mention {
+                transform: translateY(15px);
+            }
+
+
+            form .envoi {
+            left: 0%;
+            }
+        }
 
     footer {
     height: auto;

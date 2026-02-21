@@ -1,0 +1,55 @@
+        body {
+            font-family: 'Iceberg', sans-serif; /* police moderne et lisible */
+            color: #333;
+            background-color:#0F172A;
+            /*background: linear-gradient(135deg, #020617, #0F172A);*/ /* dégradé */;
+        }
+
+        .merci-box{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: auto;
+            width: 80%;
+            padding: 20px;
+            background-image: url("image/fond3.avif");
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            font-weight:bold;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .merci-box h1 {
+            font-size: 50px;
+            color:aliceblue;
+        }
+
+        .merci-box p{
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        .merci-box button {
+            margin-top: 25px;
+            background-color: #bd8d14;
+            border-radius: 5px;
+            padding:10px 20px ;
+            font-size: 20px;
+            font-family: 'Iceberg', sans-serif; ;
+            color: aliceblue;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .merci-box button a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .merci-box button:hover { /* effet de survol*/
+            transform: scale(1.1);
+            transition: transform 0.5s;
+        }

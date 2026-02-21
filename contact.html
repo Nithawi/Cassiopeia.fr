@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles-contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Cassiopeia Space</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Iceland&family=Noto+Sans+JP:wght@100..900&family=Playball&display=swap');
@@ -23,18 +24,52 @@
         </nav>
     </header>
 
-    <section class="contact">
-        <h1>Contactez-nous</h1>
-        <p>Pour toute question ou demande d'information, n'hésitez pas à nous contacter :</p>
-        <ul>
-            <li>Email : <a href="mailto:contact@cassiopeiaspace.fr">contact@cassiopeiaspace.fr</a></li>
-        </ul>
-        <p>Vous pouvez également nous suivre sur les réseaux sociaux :</p>
-        <ul>
-            <li><a href="https://www.instagram.com/timeosouchaud">Instagram</a></li>
-            <li><a href="https://www.github.com/nithawi">GitHub</a></li>
-        </ul>
-    </section>
+    <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="47b3a1fb-6d71-4925-a66a-e9d02a651aa9">
+    <input type="hidden" name="redirect" value="https://cassiopeia-space.com/merci.html">
+    <!-- tes champs ici -->
+        <h2>Contactez-moi</h2>
+        <div class ="separation"></div>
+        <div class="corps">
+
+            <div class = "gauche">
+                <div class="groupe">
+                    <label>Prénom :</label>
+                    <input type="text" name="prenom">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                </div>
+                <div class="groupe">
+                    <label>Nom : <span class="required">*</span></label>
+                    <input type="text" name="nom" required>
+                    <i class="fa-regular fa-chess-queen"></i>
+                </div>
+                <div class = "groupe">
+                    <label>Email : <span class="required">*</span></label>
+                    <input type="email" name="email" required>
+                    <i class="fa-solid fa-at"></i>
+                </div>
+                <div class = "groupe">
+                    <label>Telephone :</label>
+                    <input type="text" name="telephone">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+
+            </div>         
+            <div class="droite ">
+                <div class="groupe">
+                    <label>Message : <span class="required">*</span></label>
+                    <textarea placeholder="Saisissez votre message..." name="message" required></textarea>
+                </div>
+            </div>
+
+        </div>
+        <p class="mention"><span class="required">*</span> Champs obligatoires</p>
+
+        <div class="envoi">
+            <button type="submit"><i class="fa-brands fa-galactic-senate"></i> Envoyer le message </button>
+            </div> 
+        </div>
+    </form>
 
 <footer> 
     <div class="logo">Cassiopeia</div>
