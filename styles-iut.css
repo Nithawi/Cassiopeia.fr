@@ -243,13 +243,13 @@ header {
         }
 
         .slide img {
-            width: 100%;
-            height: auto;
+            width: 70%;
+            height: 80%;
             max-height: 240px;
             object-fit: contain;
             border-radius: 20px;
             display: block;
-            margin: 0 auto;
+            margin: 20px auto;
         }
 
         .info_slide {
