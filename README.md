@@ -1,1 +1,1 @@
-Ce site a pour but  d'apprnedre a concevoir des sites
+Ce site a pour but  de m'apprendre a concevoir des sites
