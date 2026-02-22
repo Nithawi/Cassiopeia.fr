@@ -234,3 +234,10 @@ footer {
     .date {
         margin: 0;
     }
+
+    footer .logo_nom {
+            font-family: "Megrim", serif;
+            font-size: 28px;
+            font-weight: bold;
+            color: #bd8d14;
+            }
