@@ -36,6 +36,12 @@
             padding: 20px 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+
+        .logo-groupe {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
         nav {
             display: flex;
             justify-content: space-between;
@@ -44,9 +50,8 @@
             padding: 0 40px;
             font-size: 20px;
         }
-        .logo {
-            transform: translateX(-20%);
-        }
+
+
         nav ul {
             list-style: none;
             display: flex;
@@ -212,9 +217,9 @@
         margin: 0;
     }
 
-    footer .logo_nom {
-            font-family: "Megrim", serif;
-            font-size: 28px;
-            font-weight: bold;
-            color: #bd8d14;
+    .logo_nom {
+        font-family: "Megrim", serif;
+        font-size: 28px;
+        font-weight: bold;
+        color: #bd8d14;
         }
