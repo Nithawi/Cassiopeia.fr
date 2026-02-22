@@ -47,7 +47,7 @@
         .logo-groupe {
             display: flex;
             align-items: center;
-            gap: 30px;
+            gap: 10px;
         }
         nav ul {
             list-style: none;
