@@ -27,8 +27,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            background: linear-gradient(135deg, #0F172A, #020617);
-            /*background: linear-gradient(135deg, #020617, #0F172A);*/ /* dégradé */
+            background: linear-gradient(135deg, #0F172A, #020617); /* dégradé */
         }
         header {
             background: linear-gradient(135deg, #020617, #0F172A); /* dégradé */
