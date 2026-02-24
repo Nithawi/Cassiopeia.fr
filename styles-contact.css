@@ -28,21 +28,25 @@
             display: flex;
             flex-direction: column;
             background: linear-gradient(135deg, #0F172A, #020617);
-            /*background: linear-gradient(135deg, #020617, #0F172A);*/ /* dégradé */;
         }
         header {
             background: linear-gradient(135deg, #020617, #0F172A); /* dégradé */
             color: #bd8d14;
-            padding: 20px 0;
+            padding: 10px 0px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 100;
+        }
+        header .nav_mobile {
+            display: none;
+            background: none;
+            border: none;
+            color: #bd8d14;
+            font-size: 28px;
+            cursor: pointer;
         }
 
-        .logo-groupe {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        nav {
+        header nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -51,25 +55,64 @@
             font-size: 20px;
         }
 
+        header nav .logo-groupe {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-        nav ul {
+        header nav .logo-groupe h1 {
+            font-family: "Megrim", serif;
+            font-size: 28px;
+            font-weight: bold;
+            color: #bd8d14;
+        }
+
+        header nav ul {
             list-style: none;
             display: flex;
             gap: 30px;
         }
-        nav a {
+
+        header nav ul.open {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 80px;
+            right: 40px;
+            background: #121a31;
+            width: 200px;
+            border-radius: 8px;
+            padding: 10px 0;
+            z-index: 1000; 
+        }
+
+        header nav ul li .nav_text i {
+            display: none;
+        }
+
+        header nav a {
             color: #bd8d14;
             text-decoration: none;
             transition: opacity 0.3s; 
             padding: 10px; /* espacement */
         }
-        nav .nav_text:hover { /* effet de survol*/
+        header nav .nav_text:hover { /* effet de survol*/
             opacity: 0.7;
         }
 
-        form {
-            max-width: 600px;
-            margin: 40px auto;
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            width: 98%;
+            flex-direction:row;
+            margin: 20px;
+            justify-content: space-around;
+        }
+
+        .contact form {
+            width: 50%;
+            margin: 40px;
             padding: 20px;
             background-image: url("image/fond3.avif");
             background-size: cover;
@@ -79,14 +122,14 @@
             color: aliceblue;
         }
 
-        form h2{
+        .contact form h2{
             text-align: center;
             color: #bd8d14;
             font-size: 30px;
         }
 
 
-        form .separation {
+        .contact form .separation {
             height: 5px;
             background-color: #ffffff;
             margin-top: 10px;
@@ -94,29 +137,36 @@
             border-radius: 8px;
         }
 
-        form .required{
+        .contact form .required{
             font-size: 15px;
             color: #ff0000;
         }
 
-        form .corps {
+        .contact form .corps {
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+            align-items: stretch;
         }
 
-        form .corps .gauche{
-                margin-right: 40px;
+        .contact form .corps .gauche{
+                flex:1;
+                margin-left: 20px;
+                margin-right: 50px;
+                width: calc(40% - 40px);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }
 
-        form .corps .groupe {
+        .contact form .corps .gauche .groupe {
             position: relative;
-            margin-top: 20px;
+            margin-top: 15px;
             display: flex;
             flex-direction: column;
         }
 
-        form .corps .gauche .groupe input {
+        .contact form .corps .gauche .groupe input {
             padding: 10px 5px 10px 30px;
             border: none;
             border-radius: 5px;
@@ -124,41 +174,52 @@
             outline: none;
         }
 
-        form .corps .gauche .groupe i {
+        .contact form .corps .gauche .groupe i {
             position: absolute;
             top: 40px;
             left: 5px;
             color: #bd8d14;
         }
 
-        form .corps .droite .groupe {
-            height: 100%;
+        .contact form .corps .droite{
+            flex: 2;
+            width: calc(60% - 40px);
+            margin-right: 20px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        form .corps .droite .groupe textarea {
+        .contact form .corps .droite .groupe {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact form .corps .droite .groupe textarea {
             margin-top: 5px;
             padding: 10px;
             border: none;
             border-radius: 5px;
             outline: none;
             resize: none;
-            height: 85%;
+            flex: 1;
+            min-height: 300px;
         }
 
-        form .mention {
-            margin-top: 15px;
+        .contact form .corps .gauche .mention {
+            margin-top: 50px;
             position: relative;
             transform: translateY(-15px);
             color: aliceblue;
         }
 
-        form .envoi {
-            position: relative;
-            left: 30%;
+        .contact form .corps .droite .envoi {
+            display: flex;
+            justify-content: center;  
         }
 
-        form .envoi button {
-            margin-top: 10px;
+        .contact form .corps .droite .envoi button {
             background-color: #bd8d14;
             border-radius: 5px;
             padding:10px 20px ;
@@ -167,33 +228,64 @@
             color: aliceblue;
             outline: none;
             cursor: pointer;
+            margin-top: 20px;
         }
 
-        form .envoi i{
+        .contact form .corps .droite .envoi i{
             position: relative;
             padding: right 2px 0px ;
             right: 5px;
             color: aliceblue;
         }
         
-        form .envoi button:hover { /* effet de survol*/
+        .contact form .envoi button:hover { /* effet de survol*/
             transform: scale(1.1);
             transition: transform 0.5s;
         }
 
-        @media screen and (max-with:920){
-            form .corps .gauche{
-                margin-right: 0px;
-            }
+        @media screen and (max-width:900px){
+        .contact form .corps .gauche,
+        .contact form .corps .droite {
+            flex: none;
+            width: 100%;
+            margin: 0;
+            padding: 0 20px;
+        }
 
-            form .mention {
-                transform: translateY(15px);
-            }
+        .contact form .corps .gauche .groupe input {
+            width: 100%;
+        }
+
+        header nav {
+            justify-content: none;
+
+        }
+
+        header .nav_mobile {
+        display: block;
+        }
+
+        header nav ul {
+            display:none;
+        }
+
+        header nav ul.open {
+            display: flex;
+        }
+
+        header nav ul li a {
+            display: block;
+            padding: 20px;
+        }
+
+        header nav ul li .nav_text i {
+            display: inline;
+            margin-right:20px;
+            color: #bd8d14;
+
+        }
 
 
-            form .envoi {
-            left: 0%;
-            }
         }
 
     footer {
@@ -217,7 +309,7 @@
         margin: 0;
     }
 
-    .logo_nom {
+    footer .logo_nom {
         font-family: "Megrim", serif;
         font-size: 28px;
         font-weight: bold;

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="image/logo_blanc.png">
     <link rel="stylesheet" href="styles-contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Cassiopeia Space</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Iceland&family=Noto+Sans+JP:wght@100..900&family=Playball&display=swap');
@@ -20,61 +20,67 @@
                 <a href="index.html"><img src="image/logo_blanc.png" alt="logo" class="logo" width="100px"></a>
                 <h1 class="logo_nom">Cassiopeia</h1>
             </div>
-            <ul>
-                <li><a class ="nav_text" href="index.html"><b>Accueil</b></a></li>
-                <li><a class ="nav_text" href="presentation.html"><b>Présentation</b></a></li>
-                <li><a class ="nav_text" href="contact.html"><b>Contact</b></a></li>
+            <button class="nav_mobile" id="nav-mobile" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="nav-liens">
+                <li><a class ="nav_text" href="index.html"><i class="fa-solid fa-rocket"></i><b>Accueil</b></a></li>
+                <li><a class ="nav_text" href="presentation.html"><i class="fa-regular fa-address-card"></i></i><b>Présentation</b></a></li>
+                <li><a class ="nav_text" href="contact.html"><i class="fa-solid fa-satellite-dish"></i><b>Contact</b></a></li>
             </ul>
         </nav>
     </header>
 
-    <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="47b3a1fb-6d71-4925-a66a-e9d02a651aa9">
-    <input type="hidden" name="redirect" value="https://www.cassiopeia-space.fr/merci">
-    <!-- tes champs ici -->
-        <h2>Contactez-moi</h2>
-        <div class ="separation"></div>
-        <div class="corps">
+    <div class="contact">
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="47b3a1fb-6d71-4925-a66a-e9d02a651aa9">
+        <input type="hidden" name="redirect" value="https://www.cassiopeia-space.fr/merci">
+        <!-- tes champs ici -->
+            <h2>Contactez-moi</h2>
+            <div class ="separation"></div>
+            <div class="corps">
 
-            <div class = "gauche">
-                <div class="groupe">
-                    <label>Prénom :</label>
-                    <input type="text" name="prenom">
-                    <i class="fa-solid fa-user-astronaut"></i>
-                </div>
-                <div class="groupe">
-                    <label>Nom : <span class="required">*</span></label>
-                    <input type="text" name="nom" required>
-                    <i class="fa-regular fa-chess-queen"></i>
-                </div>
-                <div class = "groupe">
-                    <label>Email : <span class="required">*</span></label>
-                    <input type="email" name="email" required>
-                    <i class="fa-solid fa-at"></i>
-                </div>
-                <div class = "groupe">
-                    <label>Telephone :</label>
-                    <input type="text" name="telephone">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                </div>
+                <div class = "gauche">
+                    <div class="groupe">
+                        <label>Prénom :</label>
+                        <input type="text" name="prenom">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                    <div class="groupe">
+                        <label>Nom : <span class="required">*</span></label>
+                        <input type="text" name="nom" required>
+                        <i class="fa-regular fa-chess-queen"></i>
+                    </div>
+                    <div class = "groupe">
+                        <label>Email : <span class="required">*</span></label>
+                        <input type="email" name="email" required>
+                        <i class="fa-solid fa-at"></i>
+                    </div>
+                    <div class = "groupe">
+                        <label>Telephone :</label>
+                        <input type="text" name="telephone">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
 
-            </div>         
-            <div class="droite ">
-                <div class="groupe">
-                    <label>Message : <span class="required">*</span></label>
-                    <textarea placeholder="Saisissez votre message..." name="message" required></textarea>
+                    <p class="mention"><span class="required">*</span> Champs obligatoires</p>
+
+                </div>         
+                <div class="droite ">
+                    <div class="groupe">
+                        <label>Message : <span class="required">*</span></label>
+                        <textarea placeholder="Saisissez votre message..." name="message" required></textarea>
+                    </div>
+
+
+                    <div class="envoi">
+                        <button type="submit"><i class="fa-brands fa-galactic-senate"></i> Envoyer le message </button>
+                    </div>
                 </div>
             </div>
+        </form>
+    </div>
 
-        </div>
-        <p class="mention"><span class="required">*</span> Champs obligatoires</p>
-
-        <div class="envoi">
-            <button type="submit"><i class="fa-brands fa-galactic-senate"></i> Envoyer le message </button>
-            </div> 
-        </div>
-    </form>
-
+<script src="nav_mobile.js"></script>
 <footer> 
     <div class="logo_nom">Cassiopeia</div>
     <p>Merci de votre visite !</p>
@@ -86,6 +92,5 @@
 </footer>
 
 
-<script src="index.js"></script>
 </body>
 </html>
