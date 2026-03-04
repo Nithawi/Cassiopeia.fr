@@ -50,7 +50,7 @@ body {
     width: 100%;
     height: 200vh;
     position: relative;
-    background: linear-gradient(180deg, #FAF7F5 0%, #F2EBE8 100%); /* ← corrigé, background-color ne supporte pas les gradients */
+    background: linear-gradient(180deg, #FAF7F5 0%, #F2EBE8 100%);
 }
 
 .titre .debut {
@@ -216,7 +216,7 @@ body {
 .presentation .nom h2 {
     padding-top: 10px;
     padding-left: 300px;
-    color: var(--texte-doux); /* ← texte doux pour le sous-titre */
+    color: var(--texte-doux);
 }
 
 /* Projets / Sections */
@@ -224,5 +224,5 @@ body {
     height: 500px;
     padding: 20px;
     color: var(--texte);
-    background-color: var(--fond); /* ← alternance crème rosé */
+    background-color: var(--fond);
 }
