@@ -21,7 +21,7 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Iceberg', sans-serif; /* police moderne et lisible */
+            font-family: 'Iceberg', sans-serif; /* police */
             line-height: 1.6;
             color: #333;
             min-height: 100vh;
